@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F23A2CE-A7BD-4A87-BCB2-41DB695A2374}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>İnsan_Kaynakları_Otomasyonu_Sistemi</RootNamespace>
+    <AssemblyName>İnsan Kaynakları Otomasyonu Sistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.3.2, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.2\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Departmans.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Departmans.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="izinler.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>izinler.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="izinturleri.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>izinturleri.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Kayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kayıt.Designer.cs">
+      <DependentUpon>Kayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mesai.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Mesai.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MesaiEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MesaiEkle.Designer.cs">
+      <DependentUpon>MesaiEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mesailer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Mesailer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MesaiListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MesaiListele.Designer.cs">
+      <DependentUpon>MesaiListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="perosnel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>perosnel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Personlizintur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personlizintur.Designer.cs">
+      <DependentUpon>Personlizintur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Departmanlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departmanlar.Designer.cs">
+      <DependentUpon>Departmanlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelEkle.Designer.cs">
+      <DependentUpon>PersonelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personelizin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personelizin.Designer.cs">
+      <DependentUpon>Personelizin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelListele.Designer.cs">
+      <DependentUpon>PersonelListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelZam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelZam.Designer.cs">
+      <DependentUpon>PersonelZam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQL.cs" />
+    <Compile Include="turizin.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>turizin.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kayıt.resx">
+      <DependentUpon>Kayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MesaiEkle.resx">
+      <DependentUpon>MesaiEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MesaiListele.resx">
+      <DependentUpon>MesaiListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personlizintur.resx">
+      <DependentUpon>Personlizintur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departmanlar.resx">
+      <DependentUpon>Departmanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelEkle.resx">
+      <DependentUpon>PersonelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personelizin.resx">
+      <DependentUpon>Personelizin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelListele.resx">
+      <DependentUpon>PersonelListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelZam.resx">
+      <DependentUpon>PersonelZam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Departmans.xsc">
+      <DependentUpon>Departmans.xsd</DependentUpon>
+    </None>
+    <None Include="Departmans.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Departmans.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Departmans.xss">
+      <DependentUpon>Departmans.xsd</DependentUpon>
+    </None>
+    <None Include="izinler.xsc">
+      <DependentUpon>izinler.xsd</DependentUpon>
+    </None>
+    <None Include="izinler.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>izinler.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="izinler.xss">
+      <DependentUpon>izinler.xsd</DependentUpon>
+    </None>
+    <None Include="izinturleri.xsc">
+      <DependentUpon>izinturleri.xsd</DependentUpon>
+    </None>
+    <None Include="izinturleri.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>izinturleri.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="izinturleri.xss">
+      <DependentUpon>izinturleri.xsd</DependentUpon>
+    </None>
+    <None Include="Mesai.xsc">
+      <DependentUpon>Mesai.xsd</DependentUpon>
+    </None>
+    <None Include="Mesai.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Mesai.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Mesai.xss">
+      <DependentUpon>Mesai.xsd</DependentUpon>
+    </None>
+    <None Include="Mesailer.xsc">
+      <DependentUpon>Mesailer.xsd</DependentUpon>
+    </None>
+    <None Include="Mesailer.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Mesailer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Mesailer.xss">
+      <DependentUpon>Mesailer.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="perosnel.xsc">
+      <DependentUpon>perosnel.xsd</DependentUpon>
+    </None>
+    <None Include="perosnel.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>perosnel.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="perosnel.xss">
+      <DependentUpon>perosnel.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="turizin.xsc">
+      <DependentUpon>turizin.xsd</DependentUpon>
+    </None>
+    <None Include="turizin.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>turizin.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="turizin.xss">
+      <DependentUpon>turizin.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran Alıntısı.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-removebg-preview %281%291.png" />
+    <None Include="Resources\holidays %282%292.png" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\refresh %281%29.png" />
+    <None Include="Resources\forward_400px.png" />
+    <None Include="Resources\time %281%29.png" />
+    <None Include="Resources\holidays %282%291.png" />
+    <None Include="Resources\shift %281%29.png" />
+    <None Include="Resources\resume %281%29.png" />
+    <None Include="Resources\holidays %282%29.png" />
+    <None Include="Resources\asd.png" />
+    <None Include="Resources\department.png" />
+    <None Include="Resources\add-user.png" />
+    <None Include="Resources\bar-chart.png" />
+    <None Include="Resources\back_400px.png1.png" />
+    <None Include="Resources\back_400px.png11.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\exit1.png" />
+    <None Include="Resources\add %281%29.png" />
+    <Content Include="Resources\Flat_colorful_background.jpg" />
+    <None Include="Resources\holidays %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
